@@ -42,6 +42,6 @@ Route::get('posts', function() {
 
 Route::get('posts', 'PostsController@index');
 Route::get('posts/{post}', 'PostsController@show');
-Route::post('posts', 'PostsController@store');
+Route::post('posts/store', 'PostsController@store');
 Route::put('posts/{post}', 'PostsController@update');
 Route::delete('posts/{post}', 'PostsController@delete');
